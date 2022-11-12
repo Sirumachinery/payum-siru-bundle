@@ -1,0 +1,7 @@
+services:
+  siru.payum_siru.gateway_factory_builder:
+    class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
+    arguments:
+      $gatewayFactoryClass: Siru\PayumSiru\PayumSiruGatewayFactory
+    tags:
+      - { name: payum.gateway_factory_builder, factory: siru_checkout }
