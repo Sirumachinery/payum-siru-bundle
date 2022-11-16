@@ -9,20 +9,22 @@
         "docs": "https://sirumobile.com/developers"
     },
     "require": {
+        "php": "^8.0",
         "symfony/http-kernel": "^6.0",
         "payum/payum-bundle": "^2.5",
         "symfony/dependency-injection": "^6.0",
-        "symfony/config": "^6.0"
+        "symfony/config": "^6.0",
+        "sirumobile/payum-siru": "^0.1.0"
+    },
+    "require-dev": {
+        "php-http/guzzle6-adapter": "^2.0",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": { "Siru\\PayumSiruBundle\\": "src" }
     },
     "autoload-dev": {
         "psr-4": { "Siru\\PayumSiruBundle\\Tests\\": "tests" }
-    },
-    "require-dev": {
-        "php-http/guzzle6-adapter": "^2.0",
-        "phpstan/phpstan": "^1.8",
-        "phpunit/phpunit": "^9.5"
     }
 }
